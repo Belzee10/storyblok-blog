@@ -2,14 +2,13 @@
   <v-app>
     <div>
       <v-app-bar color="deep-purple accent-4" dark>
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
-        <v-toolbar-title>Page title</v-toolbar-title>
+        <v-toolbar-title>StoryBlok Blog</v-toolbar-title>
         <v-spacer></v-spacer>
-        <v-btn icon>
-          <v-icon>mdi-heart</v-icon>
+        <v-btn text color="white">
+          <nuxt-link to="/">All Posts</nuxt-link>
         </v-btn>
-        <v-btn icon>
-          <v-icon>mdi-magnify</v-icon>
+        <v-btn text>
+          <nuxt-link to="about">About</nuxt-link>
         </v-btn>
       </v-app-bar>
     </div>
@@ -29,3 +28,10 @@
 <script>
 export default {}
 </script>
+
+<style lang="scss" scoped>
+.v-application a {
+  color: white;
+  text-decoration: none;
+}
+</style>
